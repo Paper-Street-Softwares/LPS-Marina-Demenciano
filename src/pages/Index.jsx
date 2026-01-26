@@ -61,7 +61,7 @@ export default function Index() {
             <CtaNovoTemplate colorMode={colorMode} />
             <StepsNovoTemplate colorMode={colorMode} />
             {/* <FaqNovoTemplate colorMode={colorMode} /> */}
-            <FooterNovoTemplate
+          <FooterNovoTemplate
               colorMode={colorMode}
               mapa={false}
               phoneSecond={false}
