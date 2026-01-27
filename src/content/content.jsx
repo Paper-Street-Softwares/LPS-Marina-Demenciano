@@ -461,47 +461,44 @@ const content = {
     },
     ctaSecondary: {
       miniTag: 'FALE CONOSCO',
-      title: (
-        <h1>Está prestes a perder seu veículo? Ainda dá tempo de agir.</h1>
-      ),
+      title: <h1>Prestes a perder o veículo? </h1>,
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">
-            Atuação estratégica em busca e apreensão, com clareza jurídica e
-            orientação desde o primeiro contato.
-          </p>
-          <div>
-            <div className="flex items-start gap-2">
-              {' '}
-              <span>
-                <Check />
-              </span>{' '}
-              Análise imediata do seu caso e da possibilidade de suspender ou
-              reverter a apreensão
-            </div>
-            <div className="flex items-start gap-2">
-              {' '}
-              <span>
-                <Check />
-              </span>{' '}
-              Avaliação do contrato para identificar juros abusivos e falhas
-              legais
-            </div>
-            <div className="flex items-start gap-2">
-              {' '}
-              <span>
-                <Check />
-              </span>{' '}
-              Orientação clara sobre prazos, riscos e próximos passos
-            </div>
-            <div className="flex items-start gap-2">
-              {' '}
-              <span>
-                <Check />
-              </span>
-              Acompanhamento transparente e atuação responsável em todas as
-              fases do processo
-            </div>
+          <p className="mb-6 font-secondFont">Ainda dá tempo de agir.</p>
+        </div>
+      ),
+      container: (
+        <div className="flex flex-col gap-3">
+          <div className="flex items-start gap-2">
+            {' '}
+            <span>
+              <Check />
+            </span>{' '}
+            Análise imediata do seu caso e da possibilidade de suspender ou
+            reverter a apreensão
+          </div>
+          <div className="flex items-start gap-2">
+            {' '}
+            <span>
+              <Check />
+            </span>{' '}
+            Avaliação do contrato para identificar juros abusivos e falhas
+            legais
+          </div>
+          <div className="flex items-start gap-2">
+            {' '}
+            <span>
+              <Check />
+            </span>{' '}
+            Orientação clara sobre prazos, riscos e próximos passos
+          </div>
+          <div className="flex items-start gap-2">
+            {' '}
+            <span>
+              <Check />
+            </span>
+            Acompanhamento transparente e atuação responsável em todas as fases
+            do processo
           </div>
         </div>
       ),

@@ -61,6 +61,11 @@ function CtaNovoTemplate({ colorMode }) {
             >
               {content.texts.ctaSecondary.subtitle}
             </p>
+            <div
+              className={`text-white/90 border rounded-lg p-4 mb-4 text-start`}
+            >
+              {content.texts.ctaSecondary.container}
+            </div>
 
             {/* <div>
               <FormAndAdress />
