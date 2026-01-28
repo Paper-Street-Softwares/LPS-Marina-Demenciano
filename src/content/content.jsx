@@ -137,8 +137,8 @@ const content = {
       ),
       subtitle: (
         <p>
-          Saiba agora como suspender o processo, ganhar tempo e defender seu bem
-          legalmente, antes que ele seja levado.
+          Te ajudamos a suspender o processo, ganhar tempo e defender seu bem
+          legalmente, mesmo que ele já tenha sido levado.
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
@@ -201,7 +201,7 @@ const content = {
       },
       fraseObs:
         'Entre em contato conosco e lhe daremos todo o suporte necessário',
-      ctaButtonText: 'Falar conosco agora pelo WhatsApp',
+      ctaButtonText: 'Seja atendido agora no WhatsApp',
     },
     features: {
       miniTag: 'Proteção do seu veículo',
@@ -347,6 +347,7 @@ const content = {
           subtitle: 'A_Definir',
         },
       },
+      ctaButtonText: 'Recuperar minha paz ao dirigir',
     },
     maps: {
       minitag: 'A_Definir',
@@ -402,7 +403,7 @@ const content = {
       paragraphModalCta: 'Entre em contato',
       titleModal: 'A_Definir',
       ctaButtonAriaLabel: 'Botão para entrar em contato',
-      ctaButtonText: 'Avaliar meu caso agora',
+      ctaButtonText: 'Falar diretamente com a Dr. Marina',
       // aboutSocial: {
       //   img: {
       //     img: aboutSocialImg,
@@ -484,7 +485,7 @@ const content = {
             'Você acompanha cada etapa do processo com explicações objetivas, prazos claros e orientações práticas, sabendo exatamente o que está sendo feito para proteger seu veículo.',
         },
       },
-      ctaButtonText: 'Falar diretamente comigo',
+      ctaButtonText: 'Falar diretamente com a Dr. Marina',
     },
     ctaSecondary: {
       miniTag: 'FALE CONOSCO',
@@ -537,7 +538,7 @@ const content = {
       titleDireita: (
         <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
       ),
-      ctaButtonText: 'Falar agora com a Dr. Marina',
+      ctaButtonText: 'Preciso de ajuda urgente',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
     },
