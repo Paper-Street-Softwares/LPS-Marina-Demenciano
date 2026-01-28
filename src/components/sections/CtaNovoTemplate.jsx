@@ -11,28 +11,25 @@ import FormAndAdress from '../interactives/Forms/FormAndAdress'
 
 function CtaNovoTemplate({ colorMode }) {
   // Classes dinâmicas conforme colorMode
-  let text, textOpacity, backgroundMode, miniTagCtaDark, textDestaque
+  let text, textOpacity, backgroundMode, miniTagCtaDark
 
   switch (colorMode) {
     case 'light':
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corTitulosBranca/60'
-      backgroundMode = 'bg-primaryDark'
+      text = 'text-corTitulosPreto'
+      textOpacity = 'text-corOutrosTextosPreto'
+      backgroundMode = 'bg-white'
       miniTagCtaDark = 'text-primaryDark'
-      textDestaque = 'text-primaryDark'
       break
     case 'dark':
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corTitulosBranca/60'
       backgroundMode = 'bg-darkOpacity'
       miniTagCtaDark = 'text-primaryLight'
-      textDestaque = 'text-primaryLight'
       break
     default:
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
       backgroundMode = 'bg-primaryDark'
-      textDestaque = 'text-primaryLight'
   }
 
   return (
@@ -61,9 +58,8 @@ function CtaNovoTemplate({ colorMode }) {
             >
               {content.texts.ctaSecondary.subtitle}
             </p>
-            <div
-              className={`text-white/90 border rounded-lg p-4 mb-4 text-start`}
-            >
+
+            <div className={`rounded-lg p-4 mb-4 text-start`}>
               {content.texts.ctaSecondary.container}
             </div>
 
@@ -85,8 +81,7 @@ function CtaNovoTemplate({ colorMode }) {
                 }
                 link={content.texts.links.ctaWhatsapp}
                 label={content.texts.ctaSecondary.ctaButtonText}
-                // colorMode={colorMode}
-                className={`bg-white/80 ${textDestaque}`}
+                colorMode={colorMode}
               />
               <ButtonReflexo
                 id="ligar"

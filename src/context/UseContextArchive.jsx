@@ -22,13 +22,13 @@ export function ColorModeProvider({ children }) {
 }
 
 export const whatsAppThemes = {
-  light: 'bg-green-800 text-corTitulosBranca border border-green-600/30',
+  light: 'bg-wppDark text-corTitulosBranca border-green-600/30',
   dark: 'bg-green-500 text-black',
   default: 'bg-green-500 text-black',
 }
 
 export const defaultButtonThemes = {
-  light: 'bg-primaryDark text-corTitulosBranca border border-primaryDark/20',
+  light: 'bg-primaryDark text-corTitulosBranca border border-primaryDark/20 ',
   dark: 'bg-primaryLight text-corTitulosPreto',
   default: 'bg-secondary text-corTitulosPreto border border-primaryDark/20',
 }

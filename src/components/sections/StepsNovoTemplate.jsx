@@ -23,7 +23,7 @@ function StepsNovoTemplate({ colorMode }) {
 
   switch (colorMode) {
     case 'light':
-      backgroundMode = 'bg-white'
+      backgroundMode = 'bg-terciary/60'
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
       stepNumberBg = 'bg-white'

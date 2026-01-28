@@ -6,7 +6,13 @@ export default {
     './src/pages/**/*.{js,ts,jsx,tsx}',
     './src/utils/**/*.{js,ts,jsx,tsx}',
   ],
-  safelist: ['bg-green-800', 'bg-green-600', 'bg-green-500', 'bg-red-800'],
+  safelist: [
+    'bg-green-800',
+    'bg-green-600',
+    'bg-green-500',
+    'bg-red-800',
+    'bg-wppDark',
+  ],
   theme: {
     extend: {
       colors: {
@@ -17,6 +23,7 @@ export default {
         terciary: '#F7F5F1',
         quartenary: '#FCFBFA',
         borderImage: '#292929',
+        corExclamationCard: '#AA954E',
 
         // Copys
         corTitulosBranca: '#FFFFFF',
@@ -26,7 +33,7 @@ export default {
 
         // hex botãoColor wpp
         wppLight: '#075e54',
-        wppDark: '#25d366',
+        wppDark: '#44AD3A',
 
         // Minitags
         bgIcons: '#E0E2E9',

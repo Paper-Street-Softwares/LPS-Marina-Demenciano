@@ -15,6 +15,11 @@ export default function ButtonReflexo({
   const { colorMode, whatsAppColor } = useColorMode()
   const isLigar = id === 'ligar'
   const effectiveWhatsAppColor = isLigar ? false : whatsAppColor
+  const shadowClass = effectiveWhatsAppColor
+    ? 'shadow-wppDark/30'
+    : colorMode === 'dark'
+      ? 'shadow-black'
+      : 'shadow-primaryDark/20'
 
   const themes = {
     light: 'bg-primaryDark text-corTitulosBranca border border-primaryDark/20',
@@ -55,9 +60,7 @@ export default function ButtonReflexo({
           ${colors} 
           ${spacing}
           font-normal font-secondFont rounded-full text-lg 
-          transition-all scale-100 hover:scale-90 duration-500 shadow-lg ${
-            colorMode === 'dark' ? 'shadow-black' : 'shadow-primaryDark/20'
-          } gap-3 text-paragraph3 tablet1:text-paragraph4
+          transition-all scale-100 hover:scale-90 duration-500 shadow-lg ${shadowClass} gap-3 text-paragraph3 tablet1:text-paragraph4
           min-w-[10px] 
           text-center 
         `}
