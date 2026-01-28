@@ -76,7 +76,7 @@ function HeroTemplateNovo({
       paddingTopAndBottom={false}
       className={`${backgroundMode}`}
     >
-      <section className="relative min-h-[90vh] w-full pt-[120px] pb-[70px] phone3:pt-[130px] tablet1:pt-[170px] desktop1:pt-[150px] desktop2:pt-[180px] flex items-center justify-center overflow-hidden font-mainFont">
+      <section className="relative min-h-[90vh] w-full pt-[120px] pb-[70px] phone3:pt-[130px] tablet1:pt-[170px] desktop1:pt-[180px] flex items-center justify-center overflow-hidden font-mainFont">
         {/* Abstract Background Shapes */}
         <div
           className={`absolute top-0 right-[-10px] h-full w-[80%] -skew-x-12 translate-x-2/4 z-0 ${bgFaixaHero}`}
@@ -92,29 +92,25 @@ function HeroTemplateNovo({
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut' }}
-              className="space-y-8 order-2 lg:order-1 flex flex-col items-start desktop1:items-start "
+              className="space-y-8 order-2 lg:order-1 flex flex-col items-start desktop1:items-start"
             >
               <div
                 className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full border shadow-sm text-xs font-secondFont font-bold tracking-wide uppercase ${bgMinitag}`}
               >
-                <span>
-                  <MapPin className="w-4 h-4" />
-                </span>
+                <span>{/* <MapPin className="w-4 h-4" /> */}🚨</span>
                 {content.texts.hero.miniTag}
               </div>
-
               <h1
-                // className={` desktop1:text-start w-full text-4xl md:text-5xl lg:text-5xl font-medium leading-[1.1] ${text} `}
-                className={` desktop1:text-start w-full text-[34px] phone3:text-4xl md:text-5xl lg:text-4xl xl:text-5xl font-medium leading-[1.1] ${text} `}
+                className={` desktop1:text-start text-[31px] phone2:text-4xl md:text-5xl lg:text-7xl font-medium leading-[1.1] ${text} `}
               >
                 {content.texts.hero.title}
               </h1>
+
               <p
                 className={`text-start desktop1:text-start text-lg md:text-xl leading-relaxed max-w-lg font-secondFont font-extralight ${textOpacity}`}
               >
                 {content.texts.hero.subtitle}
               </p>
-
               <div className="flex flex-col gap-4 pt-4">
                 <ButtonReflexo
                   icon={
@@ -148,15 +144,16 @@ function HeroTemplateNovo({
                   colorMode === 'light' ? 'opacity-90' : 'opacity-20'
                 } w-full`}
               /> */}
-              {/* <div className="flex justify-start items-center gap-3 text-sm text-mutedForeground pt-6 w-full">
-                <div className="relative flex h-3 w-3">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+              <div className="flex justify-start items-center gap-3 text-sm text-mutedForeground pt-6 w-full">
+                <div className="relative flex ">
+                  {/* <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-600 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-red-600"></span> */}
+                  ⚠️
                 </div>
                 <span className={`font-secondFont font-light ${textOpacity}`}>
                   {content.texts.hero.obsHero.text}
                 </span>
-              </div> */}
+              </div>
             </motion.div>
 
             {/* Image */}
@@ -167,7 +164,7 @@ function HeroTemplateNovo({
               className="relative order-1 lg:order-2"
             >
               <div
-                className={`relative rounded-[2.5rem] overflow-hidden aspect-[4/4] md:aspect-[4/4] shadow-2xl lg:aspect-[4/4] ring-1 ring-black/5 bg-gray-100 ${image}`}
+                className={`relative rounded-[2.5rem] overflow-hidden aspect-[3/4] md:aspect-[4/5] shadow-2xl lg:aspect-[3/4] ring-1 ring-black/5 bg-gray-100 ${image}`}
               >
                 <img
                   src={content.texts.hero.heroDefaultImage}

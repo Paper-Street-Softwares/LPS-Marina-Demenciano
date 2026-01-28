@@ -117,7 +117,7 @@ const content = {
           Seu veículo foi alvo de{' '}
           <span className="destaque relative italic font-light">
             busca e apreensão
-            <span>
+            {/* <span>
               <svg
                 className="hero-underline absolute -bottom-2 left-0 w-full h-3 text-accent/30"
                 viewBox="0 0 100 10"
@@ -130,7 +130,7 @@ const content = {
                   fill="none"
                 />
               </svg>
-            </span>
+            </span> */}
           </span>
           ?
         </h1>
@@ -150,7 +150,7 @@ const content = {
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: 'A_Definir',
+        text: 'Cada minuto importa, não deixe para amanhã!',
         textTwo: '',
       },
       secondaryCta: 'Contato',
@@ -173,26 +173,56 @@ const content = {
         },
       },
     },
+    important: {
+      miniTag: 'Atenção',
+      title: 'O que é importante saber sobre busca e apreensão de veículos',
+      cards: {
+        card1: {
+          title: 'Meu veículo foi apreendido. Posso fazer alguma coisa?',
+          paragraph:
+            'Sim! O ideal é apresentar defesa na ação de busca e apreensão o quanto antes. Após 5 dias, sem defesa, o banco assume a posse do veículo.',
+        },
+        card2: {
+          title: 'Mas eu tenho um prazo para recorrer?',
+          paragraph:
+            'Tem! O prazo para contestação da busca e apreensão é de 15 dias a partir da apreensão. Procure imediatamente um advogado especializado em busca e apreensão de veículos.',
+        },
+        card3: {
+          title: 'Se eu não fizer nada, o que pode acontecer?',
+          paragraph:
+            'Além de perder o bem, caso ele não seja suficiente para quitar sua dívida com o banco, você poderá sofrer penhora de outros bens até saldar o valor total da dívida.',
+        },
+        card4: {
+          title:
+            'Por que apresentar defesa no processo de busca e apreensão mesmo sabendo que eu estou devendo?',
+          paragraph:
+            'Porque muitas vezes os juros cobrados são abusivos - e podem tornar a busca e apreensão do veículo inválida. Agir rápido pode salvar seu carro e seu dinheiro.',
+        },
+      },
+      fraseObs:
+        'Entre em contato conosco e lhe daremos todo o suporte necessário',
+      ctaButtonText: 'Falar conosco agora pelo WhatsApp',
+    },
     features: {
-      miniTag: 'Defesa em Busca e Apreensão',
+      miniTag: 'Proteção do seu veículo',
       title: (
         <h1>
-          Defesa jurídica para
-          <span className="destaque italic font-light"> proteger</span> seu
-          veículo e seus direitos
+          Defesa
+          <span className="destaque italic font-light"> jurídica</span> para
+          impedir a perda do seu veículo
         </h1>
       ),
       subtitle:
-        'Atuação estratégica para suspender, reverter ou negociar processos de busca e apreensão com segurança jurídica.',
+        'Atuação estratégica para suspender a busca e apreensão, recuperar o veículo ou negociar a dívida, com segurança jurídica e rapidez.',
       imgFeatures: imgFeatures,
       alt: 'imagem representativa da Seção Serviços',
-      titleMessageFeature: '100%',
-      subtitleMessageFeature: 'de foco em proteger o que é seu',
+      titleMessageFeature: 'Recupere',
+      subtitleMessageFeature: 'a sua paz e tranquilidade com seu veículo!',
       cards: {
         card1: {
           title: 'Defesa em Ação de Busca e Apreensão',
           subtitle:
-            'Atuamos para suspender ou contestar a apreensão do veículo.',
+            'Agimos rapidamente para suspender o processo e impedir que o veículo seja levado.',
           description: (
             <div>
               A_Definir
@@ -208,7 +238,7 @@ const content = {
         card2: {
           title: 'Recuperação do Veículo Apreendido',
           subtitle:
-            'Atuação rápida para tentar reverter a apreensão e recuperar o bem.',
+            'Atuação emergencial para tentar reverter a apreensão e recuperar seu carro.',
           description: (
             <div>
               A_Definir
@@ -224,7 +254,7 @@ const content = {
         card3: {
           title: 'Negociação e Renegociação da Dívida',
           subtitle:
-            'Buscamos acordos viáveis para manter o veículo e reorganizar o pagamento.',
+            'Buscamos acordos possíveis para manter o veículo e organizar o pagamento da dívida.',
           description: (
             <div>
               A_Definir <br />
@@ -239,7 +269,7 @@ const content = {
         card4: {
           title: 'Revisão de Contrato e Juros Abusivos',
           subtitle:
-            'Analisamos o contrato para identificar cobranças ilegais e reduzir a dívida.',
+            'Análise completa do contrato para identificar cobranças ilegais e reduzir o valor da dívida.',
           description: (
             <div>
               A_Definir
@@ -339,7 +369,7 @@ const content = {
       ),
       SecondPartTitle: '',
       subtitle:
-        'Mais de 13 anos defendendo direitos e protegendo patrimônios com estratégia e clareza.',
+        'Experiência consolidada na proteção de direitos e patrimônios com estratégia.',
       paragraph: (
         <div>
           Com mais de 13 anos de experiência jurídica, a Dra. Mariana Demenciano
@@ -372,7 +402,7 @@ const content = {
       paragraphModalCta: 'Entre em contato',
       titleModal: 'A_Definir',
       ctaButtonAriaLabel: 'Botão para entrar em contato',
-      ctaButtonText: 'Conversar com a Dra. Mariana',
+      ctaButtonText: 'Avaliar meu caso agora',
       // aboutSocial: {
       //   img: {
       //     img: aboutSocialImg,
@@ -417,15 +447,12 @@ const content = {
     //   },
     // },
     steps: {
-      miniTag: 'POR QUE ESCOLHER NOSSA ATUAÇÃO',
+      miniTag: 'COMO ATUAMOS NA DEFESA DO SEU VEÍCULO',
       title: (
         <h1>
-          Defesa em
-          <span className="destaque italic font-light">
-            {' '}
-            busca e apreensão
-          </span>{' '}
-          com estratégia, clareza e responsabilidade
+          Defesa
+          <span className="destaque italic font-light"> estratégica </span>para
+          proteger seu carro na ação de busca e apreensão
         </h1>
       ),
       subtitle: '',
@@ -434,34 +461,34 @@ const content = {
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: 'Análise completa do seu caso',
+          cardTitle: 'Análise do financiamento e da ação do banco',
           cardDescription:
-            'Analisamos seu contrato, a ação judicial e a situação financeira para identificar falhas, abusos e as melhores possibilidades de defesa no seu caso.',
+            'Analisamos o contrato de financiamento do veículo, a notificação de atraso e a ação de busca e apreensão para identificar juros abusivos, cobranças irregulares e falhas que podem anular ou suspender o processo.',
         },
         card2: {
           stepNumber: 2,
-          cardTitle: 'Estratégia jurídica bem definida',
+          cardTitle: 'Medidas urgentes para evitar ou reverter a apreensão',
           cardDescription:
-            'A defesa é construída com base em documentos, fundamentos legais e medidas adequadas para suspender a apreensão, reduzir a dívida ou buscar um acordo viável.',
+            'Com base na análise, adotamos as medidas jurídicas cabíveis para tentar impedir a apreensão do veículo ou buscar a devolução do carro quando ele já foi recolhido pelo banco.',
         },
         card3: {
           stepNumber: 3,
-          cardTitle: 'Acompanhamento constante e organizado',
+          cardTitle: 'Estratégia para reduzir a dívida ou viabilizar acordo',
           cardDescription:
-            'Você recebe orientações objetivas, atualizações do processo e explicações claras sobre cada etapa, sem surpresas ou termos difíceis.',
+            'Buscamos alternativas legais para revisão do valor financiado, redução do saldo devedor ou negociação direta com a instituição financeira, sempre focando em manter o veículo e aliviar o impacto financeiro.',
         },
         card4: {
           stepNumber: 4,
-          cardTitle: 'Honorários claros desde o início',
+          cardTitle: 'Acompanhamento próximo e comunicação clara',
           cardDescription:
-            'Os valores são explicados de forma transparente, antes do início da atuação, respeitando as normas da advocacia e a realidade do seu caso.',
+            'Você acompanha cada etapa do processo com explicações objetivas, prazos claros e orientações práticas, sabendo exatamente o que está sendo feito para proteger seu veículo.',
         },
       },
       ctaButtonText: 'Falar diretamente comigo',
     },
     ctaSecondary: {
       miniTag: 'FALE CONOSCO',
-      title: <h1>Prestes a perder o veículo? </h1>,
+      title: <h1>Prestes a perder seu veículo? </h1>,
       subtitle: (
         <div>
           <p className="mb-6 font-secondFont">Ainda dá tempo de agir.</p>
@@ -471,31 +498,31 @@ const content = {
         <div className="flex flex-col gap-3">
           <div className="flex items-start gap-2">
             {' '}
-            <span>
-              <Check />
+            <span className="bg-primaryDark rounded-full p-0.5">
+              <Check className="text-white" width={22} />
             </span>{' '}
             Análise imediata do seu caso e da possibilidade de suspender ou
             reverter a apreensão
           </div>
           <div className="flex items-start gap-2">
             {' '}
-            <span>
-              <Check />
+            <span className="bg-primaryDark rounded-full p-0.5">
+              <Check className="text-white" width={22} />
             </span>{' '}
             Avaliação do contrato para identificar juros abusivos e falhas
             legais
           </div>
           <div className="flex items-start gap-2">
             {' '}
-            <span>
-              <Check />
+            <span className="bg-primaryDark rounded-full p-0.5">
+              <Check className="text-white" width={22} />
             </span>{' '}
             Orientação clara sobre prazos, riscos e próximos passos
           </div>
           <div className="flex items-start gap-2">
             {' '}
-            <span>
-              <Check />
+            <span className="bg-primaryDark rounded-full p-0.5">
+              <Check className="text-white" width={22} />
             </span>
             Acompanhamento transparente e atuação responsável em todas as fases
             do processo
@@ -510,7 +537,7 @@ const content = {
       titleDireita: (
         <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
       ),
-      ctaButtonText: 'Falar agora com uma advogada e entenda suas opções',
+      ctaButtonText: 'Falar agora com a Dr. Marina',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
     },
@@ -1130,6 +1157,19 @@ const content = {
       obsFooter: infos.obs,
       footerNavegacaoText: 'NAVEGAÇÃO',
       footerDivulgacaoText: 'Gostaria de ter um site como este? Clique aqui',
+    },
+    svgs: {
+      wpp: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width={18}
+          height={18}
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.197.297-.768.966-.94 1.164-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.007-.372-.009-.571-.009-.198 0-.52.074-.793.372-.273.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.226 1.36.194 1.872.118.571-.085 1.758-.718 2.006-1.412.248-.694.248-1.288.173-1.412-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.896a9.825 9.825 0 012.893 6.994c-.002 5.45-4.436 9.884-9.884 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.158 11.892c0 2.096.547 4.142 1.588 5.94L0 24l6.305-1.654a11.882 11.882 0 005.732 1.463h.005c6.554 0 11.89-5.335 11.892-11.892a11.821 11.821 0 00-3.466-8.413" />
+        </svg>
+      ),
     },
   },
 }

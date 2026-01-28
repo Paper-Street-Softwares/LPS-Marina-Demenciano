@@ -66,7 +66,7 @@ export default function WhatsappAnimated() {
       await fetch(
         'https://cors-proxy-seven-beige.vercel.app/api/proxy?url=' +
           encodeURIComponent(
-            'https://script.google.com/macros/s/AKfycbwWTNo_3L1kz9xffgOqa0udGzvJpD8Y2nDzyh5aZNYKjSfL_KqmXA1J7MuR0KCREHvZ4w/exec'
+            'https://script.google.com/macros/s/AKfycbwWTNo_3L1kz9xffgOqa0udGzvJpD8Y2nDzyh5aZNYKjSfL_KqmXA1J7MuR0KCREHvZ4w/exec',
           ),
         {
           method: 'POST',
@@ -76,7 +76,7 @@ export default function WhatsappAnimated() {
             email: telefone,
             origem: content.origem,
           }),
-        }
+        },
       )
     } catch (error) {
       // console.log('Erro ao enviar:', error)
@@ -107,7 +107,7 @@ export default function WhatsappAnimated() {
         aria-label="Botão flutuante de WhatsApp para contato"
       >
         <div
-          className={`absolute z-10 top-0 left-0 w-full h-full rounded-full animate-ping border border-white ${colorButton}`}
+          className={`absolute z-10 top-0 left-0 w-full h-full rounded-full animate-ping border border-white ${colorButton} `}
         ></div>
         <div className="relative z-20 ">
           <svg

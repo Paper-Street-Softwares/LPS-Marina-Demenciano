@@ -36,6 +36,7 @@ import { ColorModeProvider } from '../context/UseContextArchive'
 import { useColorMode } from '../context/UseContextArchive'
 import Cards from '../components/sections/Cards'
 import InventarioComparativo from '../components/sections/Tabela'
+import Important from '../components/sections/Important'
 
 export default function Index() {
   const { colorMode, setColorMode } = useColorMode()
@@ -51,6 +52,7 @@ export default function Index() {
           <HeroTemplateNovo colorMode={colorMode} />
           {/* Lazy sections */}
           <Suspense fallback={null}>
+            <Important colorMode={colorMode} />
             <FeaturesNovaTemplate colorMode={colorMode} />
             {/* <Cards colorMode={colorMode} /> */}
             {/* <InventarioComparativo colorMode={colorMode} /> */}
@@ -61,7 +63,7 @@ export default function Index() {
             <CtaNovoTemplate colorMode={colorMode} />
             <StepsNovoTemplate colorMode={colorMode} />
             {/* <FaqNovoTemplate colorMode={colorMode} /> */}
-          <FooterNovoTemplate
+            <FooterNovoTemplate
               colorMode={colorMode}
               mapa={false}
               phoneSecond={false}
@@ -69,7 +71,7 @@ export default function Index() {
               adress={true}
               email={true}
               emailSecond={false}
-              fraseFooter={false}
+              fraseFooter={true} // frase Google LLC
               obs={true}
             />
             <WhatsappAnimated colorMode={colorMode} />
