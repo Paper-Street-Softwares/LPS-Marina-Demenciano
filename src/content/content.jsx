@@ -1,5 +1,6 @@
 import logo from '../assets/imgs/logo/logo.webp'
 import heroDefaultImg from '../assets/imgs/hero/lawHero.webp'
+import heroDefaultMobileImg from '../assets/imgs/hero/lawHeroMobile.webp'
 import imgFeatures from '../assets/imgs/features/imgServices.webp'
 
 import aboutImg from '../assets/imgs/about/aboutImg.webp'
@@ -142,6 +143,7 @@ const content = {
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
+      heroDefaultMobile: heroDefaultMobileImg,
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
