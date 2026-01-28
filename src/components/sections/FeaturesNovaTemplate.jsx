@@ -136,7 +136,7 @@ function FeaturesNovaTemplate({ colorMode }) {
                       </svg>
                     }
                     link={content.texts.links.ctaWhatsapp}
-                    label={content.texts.hero.ctaButtonText}
+                    label={content.texts.features.ctaButtonText}
                     colorMode={colorMode}
                     className="mt-12"
                   />

@@ -22,7 +22,7 @@ function Important({ colorMode }) {
             <CardsImportants title={item.title} paragraph={item.paragraph} />
           ))}
         </div>
-        <p className="flex justify-center font-secondFont text-center w-full my-12">
+        <p className="flex justify-center font-secondFont text-center w-full my-12 text-black/70">
           {content.texts.important.fraseObs}
         </p>
 
