@@ -36,7 +36,7 @@ function FooterNovoTemplate({
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
       iconColor = 'text-primaryDark/60'
-      backgroundMode = 'bg-secondary/60'
+      backgroundMode = 'bg-terciary/60'
       break
     case 'dark':
       text = 'text-corTitulosBranca'
@@ -86,7 +86,9 @@ function FooterNovoTemplate({
                   )}
                   {obs && (
                     <>
-                      <p className="mt-2 font-secondFont">{content.texts.infos.obsFooter}</p>
+                      <p className="mt-2 font-secondFont">
+                        {content.texts.infos.obsFooter}
+                      </p>
                     </>
                   )}
                 </p>

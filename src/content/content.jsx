@@ -114,9 +114,9 @@ const content = {
       miniTag: 'NÃO PERCA SEU CARRO',
       title: (
         <h1>
-          Precisa de uma Advogada Especialista em Defesa de Busca e{' '}
+          Seu veículo foi alvo de{' '}
           <span className="destaque relative italic font-light">
-            Apreensão
+            busca e apreensão
             <span>
               <svg
                 className="hero-underline absolute -bottom-2 left-0 w-full h-3 text-accent/30"
@@ -137,15 +137,15 @@ const content = {
       ),
       subtitle: (
         <p>
-          Fale agora com a Dra. Marina Demenciano e saiba como exigir os seus
-          direitos para manter ou recuperar seu veículo.
+          Saiba agora como suspender o processo, ganhar tempo e defender seu bem
+          legalmente, antes que ele seja levado.
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'Falar com a Advogada agora',
+      ctaButtonText: 'Preciso de ajuda urgente',
       ctaButtonTextSecondary: 'A_Definir',
       obsHero: {
         icon: <LucideIdCard />,

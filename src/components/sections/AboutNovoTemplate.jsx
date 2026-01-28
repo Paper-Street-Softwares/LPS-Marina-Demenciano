@@ -31,7 +31,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode }) {
 
   switch (colorMode) {
     case 'light':
-      backgroundMode = 'bg-secondary/60'
+      backgroundMode = 'bg-terciary/60'
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
       textDestaque = 'text-primaryDark'
