@@ -30,7 +30,7 @@ import { FileText } from 'lucide-react'
 const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: 'Dra. Mariana Demenciano',
+  name: 'Dra. Marina Demenciano',
   email: 'contato', // Email desejado pelo cliente
   emailSecundario: 'A_Definir', // Email desejado pelo cliente
   domain: 'marinademencianoadvocacia.com.br', // Sem "www"
@@ -362,7 +362,7 @@ const content = {
         img: aboutImg,
         alt: 'Imagem ilustrativa da Seção Sobre',
       },
-      miniTag: 'QUEM É A DRA. MARIANA DEMENCIANO',
+      miniTag: 'QUEM É A DRA. MARINA DEMENCIANO',
       title: (
         <h1>
           Minha
@@ -375,7 +375,7 @@ const content = {
         'Experiência consolidada na proteção de direitos e patrimônios com estratégia.',
       paragraph: (
         <div>
-          Com mais de 13 anos de experiência jurídica, a Dra. Mariana Demenciano
+          Com mais de 13 anos de experiência jurídica, a Dra. Marina Demenciano
           atua na defesa de pessoas que enfrentam ações de busca e apreensão,
           oferecendo orientação segura em momentos de pressão e insegurança. Seu
           trabalho é focado em proteger direitos, analisar contratos e buscar
@@ -844,7 +844,7 @@ const content = {
     //   },
     // },
     footer: {
-      copyrightLine: ` ${currentYear} - ${infos.name} - Todos os direitos reservados`,
+      copyrightLine: ` ${currentYear} - ${infos.name}`,
       footerDivulgacaoText: 'Gostaria de ter um site como este? Clique aqui',
       midSectionName: 'Até mais',
       footerText:
