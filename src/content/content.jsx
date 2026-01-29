@@ -217,7 +217,7 @@ const content = {
       subtitle:
         "Atuação estratégica para suspender a busca e apreensão, recuperar o veículo ou negociar a dívida, com segurança jurídica e rapidez.",
       imgFeatures: imgFeatures,
-      alt: "imagem representativa da Seção Serviços",
+      alt: "Imagem representativa da Seção Serviços",
       titleMessageFeature: "Recupere",
       subtitleMessageFeature: "a sua paz e tranquilidade com seu veículo!",
       cards: {
