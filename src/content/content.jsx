@@ -116,11 +116,11 @@ const content = {
       title: (
         <h1>
           Seu veículo foi alvo de{" "}
-          <span className="destaque relative italic font-light">
+          <span className="relative italic font-light destaque">
             busca e apreensão
             {/* <span>
               <svg
-                className="hero-underline absolute -bottom-2 left-0 w-full h-3 text-accent/30"
+                className="absolute left-0 w-full h-3 hero-underline -bottom-2 text-accent/30"
                 viewBox="0 0 100 10"
                 preserveAspectRatio="none"
               >
@@ -210,7 +210,7 @@ const content = {
       title: (
         <h1>
           Defesa
-          <span className="destaque italic font-light"> jurídica</span> para
+          <span className="italic font-light destaque"> jurídica</span> para
           impedir a perda do seu veículo
         </h1>
       ),
@@ -366,7 +366,7 @@ const content = {
       title: (
         <h1>
           Minha
-          <span className="destaque italic font-light"> atuação</span> na sua
+          <span className="italic font-light destaque"> atuação</span> na sua
           defesa
         </h1>
       ),
@@ -405,7 +405,7 @@ const content = {
       paragraphModalCta: "Entre em contato",
       titleModal: "A_Definir",
       ctaButtonAriaLabel: "Botão para entrar em contato",
-      ctaButtonText: "Falar diretamente com a Dr. Marina",
+      ctaButtonText: "Falar diretamente com a Dra. Marina",
       // aboutSocial: {
       //   img: {
       //     img: aboutSocialImg,
@@ -454,7 +454,7 @@ const content = {
       title: (
         <h1>
           Defesa
-          <span className="destaque italic font-light"> estratégica </span>para
+          <span className="italic font-light destaque"> estratégica </span>para
           proteger seu carro na ação de busca e apreensão
         </h1>
       ),
@@ -487,7 +487,7 @@ const content = {
             "Você acompanha cada etapa do processo com explicações objetivas, prazos claros e orientações práticas, sabendo exatamente o que está sendo feito para proteger seu veículo.",
         },
       },
-      ctaButtonText: "Falar diretamente com a Dr. Marina",
+      ctaButtonText: "Falar diretamente com a Dra. Marina",
     },
     ctaSecondary: {
       miniTag: "FALE CONOSCO",
@@ -533,12 +533,12 @@ const content = {
         </div>
       ),
       subtitleDireita: (
-        <p className="gap-3 flex font-mainFont opacity-60 mt-1">
+        <p className="flex gap-3 mt-1 font-mainFont opacity-60">
           <span>E N T R E </span> E M <span>C O N T A T O</span> V I A
         </p>
       ),
       titleDireita: (
-        <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
+        <h1 className="my-3 text-title5 font-mainFont">WhatsApp</h1>
       ),
       ctaButtonText: "Preciso de ajuda urgente",
       ctaButtonAriaLabel:
