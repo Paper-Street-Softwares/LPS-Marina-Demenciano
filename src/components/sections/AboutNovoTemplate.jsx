@@ -9,6 +9,7 @@ import ButtonReflexo from '../interactives/ButtonReflexo'
 import { Button } from '../interactives/ButtonNovoTemplate'
 import { Phone } from 'lucide-react'
 import SectionHeaderNovo from '../sectionElements/SectionHeaderNovo'
+import MotionDivDownToUp from '../animation/MotionDivDownToUp'
 
 function AboutNovoTemplate({ ButtonModal, colorMode }) {
   const [visible, setVisible] = useState(false)
@@ -72,7 +73,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode }) {
           <div className="container mx-auto relative z-10">
             <div className="grid lg:grid-cols-2 gap-4 desktop1:gap-16 items-center">
               {/* Conteúdo textual */}
-              <motion.div
+              <MotionDivDownToUp
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -86,54 +87,115 @@ function AboutNovoTemplate({ ButtonModal, colorMode }) {
                     type="article"
                     colorMode={colorMode}
                   />
-                  <p
-                    className={`font-secondFont font-light text-sm tablet1:text-lg leading-relaxed mt-6 ${textOpacity}`}
-                  >
-                    {content.texts.about.paragraph}
-                  </p>
-
-                  {ButtonModal && (
-                    <Button
-                      onClick={onClick}
-                      className={`bg-transparent mt-4 border-none shadow-primary/20 font-secondFont py-0 uppercase font-bold transition-all px-0 hover:underline outline-none flex items-center gap-2 ${textDestaque}`}
+                  <MotionDivDownToUp>
+                    <p
+                      className={`font-secondFont font-light text-sm tablet1:text-lg leading-relaxed mt-6 ${textOpacity}`}
                     >
-                      {content.texts.about.buttonModalLabelAbout}
-                      <ArrowRight width={24} height={24} />
-                    </Button>
-                  )}
+                      {content.texts.about.paragraph}
+                    </p>
+                  </MotionDivDownToUp>
+
+                  <MotionDivDownToUp>
+                    {ButtonModal && (
+                      <Button
+                        onClick={onClick}
+                        className={`bg-transparent mt-4 border-none shadow-primary/20 font-secondFont py-0 uppercase font-bold transition-all px-0 hover:underline outline-none flex items-center gap-2 ${textDestaque}`}
+                      >
+                        {content.texts.about.buttonModalLabelAbout}
+                        <ArrowRight width={24} height={24} />
+                      </Button>
+                    )}
+                  </MotionDivDownToUp>
                 </div>
 
                 {/* Lista de benefícios */}
-                <div className="space-y-4">
-                  {[
-                    {
-                      title: 'Atendimento Personalizado',
-                      desc: 'Cada caso de busca e apreensão é analisado de forma individual, com estratégia jurídica sob medida.',
-                    },
-                    {
-                      title: 'Transparência Total',
-                      desc: 'Você entende o que está acontecendo e acompanha cada etapa do processo com clareza.',
-                    },
-                  ].map((item, idx) => (
-                    <div key={idx} className="flex items-start gap-4">
-                      <div className={`p-2 rounded-lg ${iconBg} mt-1`}>
-                        <CheckCircle2 className="w-5 h-5" />
+                <MotionDivDownToUp>
+                  <div className="space-y-4">
+                    {[
+                      {
+                        title: 'Atendimento Personalizado',
+                        desc: 'Cada caso de busca e apreensão é analisado de forma individual, com estratégia jurídica sob medida.',
+                      },
+                      {
+                        title: 'Transparência Total',
+                        desc: 'Você entende o que está acontecendo e acompanha cada etapa do processo com clareza.',
+                      },
+                    ].map((item, idx) => (
+                      <div key={idx} className="flex items-start gap-4">
+                        <div className={`p-2 rounded-lg ${iconBg} mt-1`}>
+                          <CheckCircle2 className="w-5 h-5" />
+                        </div>
+                        <div>
+                          <h1 className={`font-bold font-secondFont ${text}`}>
+                            {item.title}
+                          </h1>
+                          <p
+                            className={`text-sm font-secondFont font-light ${textOpacity}`}
+                          >
+                            {item.desc}
+                          </p>
+                        </div>
                       </div>
-                      <div>
-                        <h1 className={`font-bold font-secondFont ${text}`}>
-                          {item.title}
-                        </h1>
-                        <p
-                          className={`text-sm font-secondFont font-light ${textOpacity}`}
-                        >
-                          {item.desc}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+                    ))}
+                  </div>
+                </MotionDivDownToUp>
 
-                <div className="desktop1:flex flex-col gap-4 pt-4 w-fit justify-center items-start hidden ">
+                <MotionDivDownToUp>
+                  <div className="desktop1:flex flex-col gap-4 pt-4 w-fit justify-center items-start hidden ">
+                    <ButtonReflexo
+                      icon={
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width={18}
+                          height={18}
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.197.297-.768.966-.94 1.164-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.007-.372-.009-.571-.009-.198 0-.52.074-.793.372-.273.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.226 1.36.194 1.872.118.571-.085 1.758-.718 2.006-1.412.248-.694.248-1.288.173-1.412-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.896a9.825 9.825 0 012.893 6.994c-.002 5.45-4.436 9.884-9.884 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.158 11.892c0 2.096.547 4.142 1.588 5.94L0 24l6.305-1.654a11.882 11.882 0 005.732 1.463h.005c6.554 0 11.89-5.335 11.892-11.892a11.821 11.821 0 00-3.466-8.413" />
+                        </svg>
+                      }
+                      link={content.texts.links.ctaWhatsapp}
+                      label={content.texts.about.ctaButtonText}
+                      colorMode={colorMode}
+                    />
+                    <ButtonReflexo
+                      id="ligar"
+                      icon={<Phone width={20} />}
+                      link={`tel:${content.texts.infos.phone}`}
+                      label="Emergência? Ligue agora!"
+                      colorMode={colorMode}
+                      bgClass="bg-[#ff2c2c]"
+                      className="text-white"
+                    />
+                  </div>
+                </MotionDivDownToUp>
+              </MotionDivDownToUp>
+
+              {/* Imagem com destaque */}
+              <MotionDivDownToUp
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
+                className="relative w-full mt-10 tablet1:mt-24 desktop1:mt-10 m-auto overflow-visible mb-10"
+              >
+                <div className="relative rounded-3xl shadow-2xl ring-1 ring-black/5">
+                  {/* CLIP DA IMAGEM */}
+                  <div
+                    className={`relative rounded-3xl overflow-hidden  ${image}`}
+                  >
+                    <img
+                      src={content.texts.about.imagem.img}
+                      alt={content.texts.about.imagem.alt}
+                      className="w-full scale-105 hover:scale-100 transition-transform duration-700 rounded-[1rem]"
+                      width={726}
+                      height={726}
+                    />
+                  </div>
+                </div>
+              </MotionDivDownToUp>
+
+              <MotionDivDownToUp>
+                <div className="flex flex-col gap-4 w-fit justify-center items-start desktop1:hidden">
                   <ButtonReflexo
                     icon={
                       <svg
@@ -160,58 +222,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode }) {
                     className="text-white"
                   />
                 </div>
-              </motion.div>
-
-              {/* Imagem com destaque */}
-              <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
-                className="relative w-full mt-10 tablet1:mt-24 desktop1:mt-10 m-auto overflow-visible mb-10"
-              >
-                <div className="relative rounded-3xl shadow-2xl ring-1 ring-black/5">
-                  {/* CLIP DA IMAGEM */}
-                  <div
-                    className={`relative rounded-3xl overflow-hidden  ${image}`}
-                  >
-                    <img
-                      src={content.texts.about.imagem.img}
-                      alt={content.texts.about.imagem.alt}
-                      className="w-full scale-105 hover:scale-100 transition-transform duration-700 rounded-[1rem]"
-                      width={726}
-                      height={726}
-                    />
-                  </div>
-                </div>
-              </motion.div>
-
-              <div className="flex flex-col gap-4 w-fit justify-center items-start desktop1:hidden">
-                <ButtonReflexo
-                  icon={
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width={18}
-                      height={18}
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.197.297-.768.966-.94 1.164-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.007-.372-.009-.571-.009-.198 0-.52.074-.793.372-.273.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.226 1.36.194 1.872.118.571-.085 1.758-.718 2.006-1.412.248-.694.248-1.288.173-1.412-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.896a9.825 9.825 0 012.893 6.994c-.002 5.45-4.436 9.884-9.884 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.158 11.892c0 2.096.547 4.142 1.588 5.94L0 24l6.305-1.654a11.882 11.882 0 005.732 1.463h.005c6.554 0 11.89-5.335 11.892-11.892a11.821 11.821 0 00-3.466-8.413" />
-                    </svg>
-                  }
-                  link={content.texts.links.ctaWhatsapp}
-                  label={content.texts.about.ctaButtonText}
-                  colorMode={colorMode}
-                />
-                <ButtonReflexo
-                  id="ligar"
-                  icon={<Phone width={20} />}
-                  link={`tel:${content.texts.infos.phone}`}
-                  label="Emergência? Ligue agora!"
-                  colorMode={colorMode}
-                  bgClass="bg-[#ff2c2c]"
-                  className="text-white"
-                />
-              </div>
+              </MotionDivDownToUp>
             </div>
           </div>
 

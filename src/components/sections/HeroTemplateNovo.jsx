@@ -14,6 +14,7 @@ import SectionWrapper from '../sectionElements/SectionWrapper'
 import ButtonReflexo from '../interactives/ButtonReflexo'
 import ButtonAlert from '../interactives/ButtonAlert'
 import { useColorMode } from '../../context/UseContextArchive'
+import MotionDivDownUp from '../animation/MotionDivDownToUp'
 
 function HeroTemplateNovo({
   colorMode,
@@ -88,7 +89,7 @@ function HeroTemplateNovo({
           <div className="container relative z-10 grid lg:grid-cols-2 gap-4 phone2:gap-6 lg:gap-20 items-center">
             {/* Content */}
 
-            <motion.div
+            <MotionDivDownUp
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -154,10 +155,10 @@ function HeroTemplateNovo({
                   {content.texts.hero.obsHero.text}
                 </span>
               </div>
-            </motion.div>
+            </MotionDivDownUp>
 
             {/* Image */}
-            <motion.div
+            <MotionDivDownUp
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
@@ -188,7 +189,7 @@ function HeroTemplateNovo({
 
                 {/* Floating Card */}
                 {showGlobalButton && (
-                  <motion.div
+                  <MotionDivDownUp
                     id="ligar"
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
@@ -219,10 +220,10 @@ function HeroTemplateNovo({
                         />
                       </div>
                     </div>
-                  </motion.div>
+                  </MotionDivDownUp>
                 )}
               </div>
-            </motion.div>
+            </MotionDivDownUp>
           </div>
         </SectionWrapper>
       </section>
