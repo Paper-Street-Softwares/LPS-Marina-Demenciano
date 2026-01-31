@@ -89,7 +89,7 @@ function HeroTemplateNovo({
           <div className="container relative z-10 grid lg:grid-cols-2 gap-4 phone2:gap-6 lg:gap-20 items-center">
             {/* Content */}
 
-            <MotionDivDownUp
+            <div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -155,10 +155,10 @@ function HeroTemplateNovo({
                   {content.texts.hero.obsHero.text}
                 </span>
               </div>
-            </MotionDivDownUp>
+            </div>
 
             {/* Image */}
-            <MotionDivDownUp
+            <div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
@@ -189,7 +189,7 @@ function HeroTemplateNovo({
 
                 {/* Floating Card */}
                 {showGlobalButton && (
-                  <MotionDivDownUp
+                  <div
                     id="ligar"
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
@@ -220,10 +220,10 @@ function HeroTemplateNovo({
                         />
                       </div>
                     </div>
-                  </MotionDivDownUp>
+                  </div>
                 )}
               </div>
-            </MotionDivDownUp>
+            </div>
           </div>
         </SectionWrapper>
       </section>
