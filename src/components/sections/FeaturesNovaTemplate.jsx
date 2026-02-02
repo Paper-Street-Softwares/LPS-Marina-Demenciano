@@ -106,9 +106,17 @@ function FeaturesNovaTemplate({ colorMode }) {
                     <img
                       src={content.texts.features.imgFeatures}
                       alt={content.texts.features.alt}
-                      className="w-full h-full object-cover scale-105 hover:scale-100 rounded-2xl transition-transform duration-700"
+                      className="w-full h-full object-cover scale-105 hover:scale-100 rounded-2xl transition-transform duration-700 desktop1:hidden"
                       width={798}
                       height={798}
+                    />
+
+                    <img
+                      src={content.texts.features.imgFeatures}
+                      alt={content.texts.features.alt}
+                      className="w-full h-full object-cover scale-105 hover:scale-100 rounded-2xl transition-transform duration-700 hidden desktop1:flex"
+                      width={570}
+                      height={626}
                     />
                   </div>
 
