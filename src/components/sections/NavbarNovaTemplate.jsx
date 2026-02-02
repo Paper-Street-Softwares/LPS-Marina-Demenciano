@@ -79,7 +79,7 @@ function NavbarNovaTemplate({
             <img
               src={content.texts.navbar.logo.img}
               alt={content.texts.navbar.logo.alt}
-              className="w-[100%] desktop1:hidden"
+              className="w-[100%] desktop2:hidden"
               width={160}
               height={102}
               fetchPriority="high"
@@ -87,7 +87,7 @@ function NavbarNovaTemplate({
             <img
               src={content.texts.navbar.logo.imgDesktop}
               alt={content.texts.navbar.logo.alt}
-              className="w-[100%] hidden desktop1:flex"
+              className="w-[100%] hidden desktop2:flex"
               width={243}
               height={109}
               fetchPriority="high"
