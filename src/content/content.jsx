@@ -1,14 +1,16 @@
-import logo from "../assets/imgs/logo/logo.webp";
-import heroDefaultImg from "../assets/imgs/hero/lawHero.webp";
-import heroDefaultMobileImg from "../assets/imgs/hero/lawHeroMobile.webp";
-import imgFeatures from "../assets/imgs/features/imgServices.webp";
+import logo from '../assets/imgs/logo/logo.webp'
+import logoDesktop from '../assets/imgs/logo/logoDesktop.webp'
 
-import aboutImg from "../assets/imgs/about/aboutImg.webp";
+import heroDefaultImg from '../assets/imgs/hero/lawHero.webp'
+import heroDefaultMobileImg from '../assets/imgs/hero/lawHeroMobile.webp'
+import imgFeatures from '../assets/imgs/features/imgServices.webp'
+
+import aboutImg from '../assets/imgs/about/aboutImg.webp'
 // import team1 from '../assets/imgs/team/team1.webp'
 // import team2 from '../assets/imgs/team/team2.webp'
 // import aboutSocialImg from '../assets/imgs/about/aboutSocial.webp'
 
-import imgSteps from "../assets/imgs/steps/imgSteps.webp";
+import imgSteps from '../assets/imgs/steps/imgSteps.webp'
 
 import {
   Baby,
@@ -23,31 +25,31 @@ import {
   Car,
   HandCoins,
   Check,
-} from "lucide-react";
-import { Users } from "lucide-react";
-import { FileText } from "lucide-react";
+} from 'lucide-react'
+import { Users } from 'lucide-react'
+import { FileText } from 'lucide-react'
 
-const currentYear = new Date().getFullYear();
+const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: "Dra. Marina Demenciano",
-  email: "contato", // Email desejado pelo cliente
-  emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "marinademencianoadvocacia.com.br", // Sem "www"
+  name: 'Dra. Marina Demenciano',
+  email: 'contato', // Email desejado pelo cliente
+  emailSecundario: 'A_Definir', // Email desejado pelo cliente
+  domain: 'marinademencianoadvocacia.com.br', // Sem "www"
   phone: {
-    ddd: "19",
-    firstPart: "99438", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "7420", // Apenas os 4 últimos números
+    ddd: '19',
+    firstPart: '99438', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '7420', // Apenas os 4 últimos números
   },
   phoneSecundario: {
-    ddd: "A_Definir",
-    firstPart: "A_Definir", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "A_Definir", // Apenas os 4 últimos números
+    ddd: 'A_Definir',
+    firstPart: 'A_Definir', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: 'A_Definir', // Apenas os 4 últimos números
   },
   phoneTerciario: {
-    ddd: "A_Definir",
-    firstPart: "A_Definir", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "A_Definir", // Apenas os 4 últimos números
+    ddd: 'A_Definir',
+    firstPart: 'A_Definir', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: 'A_Definir', // Apenas os 4 últimos números
   },
   endereco: (
     <div>
@@ -73,24 +75,25 @@ export const infos = {
     </div>
   ),
   obs: <span className="italic">Online e presencial </span>,
-  instagramProfile: "", // Sem o @
-  facebookProfile: "",
-  linkeDinProfile: "",
-  x: "",
-  tiktokProfile: "",
+  instagramProfile: '', // Sem o @
+  facebookProfile: '',
+  linkeDinProfile: '',
+  x: '',
+  tiktokProfile: '',
 
   whatsappDefaultMessage:
-    "Olá! Preciso de ajuda com busca e apreensão. Pode me ajudar?",
+    'Olá! Preciso de ajuda com busca e apreensão. Pode me ajudar?',
   whatsChatDefaultMessage:
-    "Gostaria de falar conosco agora mesmo? Clque abaixo 👇",
-  slogan: "",
-};
+    'Gostaria de falar conosco agora mesmo? Clque abaixo 👇',
+  slogan: '',
+}
 
 const content = {
   texts: {
     navbar: {
       logo: {
         img: logo,
+        imgDesktop: logoDesktop,
         alt: `Logomarca ${infos.name}`,
       },
       solidLogo: {
@@ -98,24 +101,24 @@ const content = {
         alt: `Logomarca ${infos.name}`,
       },
       menuItems: [
-        "Início",
-        "Serviços",
-        "Sobre",
+        'Início',
+        'Serviços',
+        'Sobre',
         // 'Perguntas',
         // 'Blog',
         // 'Perguntas',
         // 'Mapa',
       ],
-      menuId: ["home", "feature", "about"],
-      ariaLabel: "Botão de Contato",
-      ctaButtonText: "Contato",
-      ctaButtonTextResponsive: "Contato",
+      menuId: ['home', 'feature', 'about'],
+      ariaLabel: 'Botão de Contato',
+      ctaButtonText: 'Contato',
+      ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: "NÃO PERCA SEU CARRO",
+      miniTag: 'NÃO PERCA SEU CARRO',
       title: (
         <h1>
-          Seu veículo foi alvo de{" "}
+          Seu veículo foi alvo de{' '}
           <span className="relative italic font-light destaque">
             busca e apreensão
             {/* <span>
@@ -144,69 +147,69 @@ const content = {
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaultMobile: heroDefaultMobileImg,
-      alt: "Imagem ilustrativa da Seção Início",
+      alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
-        "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: "Preciso de ajuda urgente",
-      ctaButtonTextSecondary: "A_Definir",
+        'Botão para chamada de ação para contato pelo whatsapp',
+      ctaButtonText: 'Preciso de ajuda urgente',
+      ctaButtonTextSecondary: 'A_Definir',
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: "Cada minuto importa, não deixe para amanhã!",
-        textTwo: "",
+        text: 'Cada minuto importa, não deixe para amanhã!',
+        textTwo: '',
       },
-      secondaryCta: "Contato",
+      secondaryCta: 'Contato',
       images: {
         static: {
           img: {},
-          alt: "",
+          alt: '',
         },
         slide1: {
           img: {},
-          alt: "",
+          alt: '',
         },
         slide2: {
           img: {},
-          alt: "",
+          alt: '',
         },
         slide3: {
           img: {},
-          alt: "",
+          alt: '',
         },
       },
     },
     important: {
-      miniTag: "Atenção",
-      title: "O que é importante saber sobre busca e apreensão de veículos",
+      miniTag: 'Atenção',
+      title: 'O que é importante saber sobre busca e apreensão de veículos',
       cards: {
         card1: {
-          title: "Meu veículo foi apreendido. Posso fazer alguma coisa?",
+          title: 'Meu veículo foi apreendido. Posso fazer alguma coisa?',
           paragraph:
-            "Sim! O ideal é apresentar defesa na ação de busca e apreensão o quanto antes. Após 5 dias, sem defesa, o banco assume a posse do veículo.",
+            'Sim! O ideal é apresentar defesa na ação de busca e apreensão o quanto antes. Após 5 dias, sem defesa, o banco assume a posse do veículo.',
         },
         card2: {
-          title: "Mas eu tenho um prazo para recorrer?",
+          title: 'Mas eu tenho um prazo para recorrer?',
           paragraph:
-            "Tem! O prazo para contestação da busca e apreensão é de 15 dias a partir da apreensão. Procure imediatamente um advogado especializado em busca e apreensão de veículos.",
+            'Tem! O prazo para contestação da busca e apreensão é de 15 dias a partir da apreensão. Procure imediatamente um advogado especializado em busca e apreensão de veículos.',
         },
         card3: {
-          title: "Se eu não fizer nada, o que pode acontecer?",
+          title: 'Se eu não fizer nada, o que pode acontecer?',
           paragraph:
-            "Além de perder o bem, caso ele não seja suficiente para quitar sua dívida com o banco, você poderá sofrer penhora de outros bens até saldar o valor total da dívida.",
+            'Além de perder o bem, caso ele não seja suficiente para quitar sua dívida com o banco, você poderá sofrer penhora de outros bens até saldar o valor total da dívida.',
         },
         card4: {
           title:
-            "Por que apresentar defesa no processo de busca e apreensão mesmo sabendo que eu estou devendo?",
+            'Por que apresentar defesa no processo de busca e apreensão mesmo sabendo que eu estou devendo?',
           paragraph:
-            "Porque muitas vezes os juros cobrados são abusivos - e podem tornar a busca e apreensão do veículo inválida. Agir rápido pode salvar seu carro e seu dinheiro.",
+            'Porque muitas vezes os juros cobrados são abusivos - e podem tornar a busca e apreensão do veículo inválida. Agir rápido pode salvar seu carro e seu dinheiro.',
         },
       },
       fraseObs:
-        "Entre em contato conosco e lhe daremos todo o suporte necessário",
-      ctaButtonText: "Seja atendido agora no WhatsApp",
+        'Entre em contato conosco e lhe daremos todo o suporte necessário',
+      ctaButtonText: 'Seja atendido agora no WhatsApp',
     },
     features: {
-      miniTag: "Proteção do seu veículo",
+      miniTag: 'Proteção do seu veículo',
       title: (
         <h1>
           Defesa
@@ -215,16 +218,16 @@ const content = {
         </h1>
       ),
       subtitle:
-        "Atuação estratégica para suspender a busca e apreensão, recuperar o veículo ou negociar a dívida, com segurança jurídica e rapidez.",
+        'Atuação estratégica para suspender a busca e apreensão, recuperar o veículo ou negociar a dívida, com segurança jurídica e rapidez.',
       imgFeatures: imgFeatures,
-      alt: "Imagem representativa da Seção Serviços",
-      titleMessageFeature: "Recupere",
-      subtitleMessageFeature: "a sua paz e tranquilidade com seu veículo!",
+      alt: 'Imagem representativa da Seção Serviços',
+      titleMessageFeature: 'Recupere',
+      subtitleMessageFeature: 'a sua paz e tranquilidade com seu veículo!',
       cards: {
         card1: {
-          title: "Defesa em Ação de Busca e Apreensão",
+          title: 'Defesa em Ação de Busca e Apreensão',
           subtitle:
-            "Agimos rapidamente para suspender o processo e impedir que o veículo seja levado.",
+            'Agimos rapidamente para suspender o processo e impedir que o veículo seja levado.',
           description: (
             <div>
               A_Definir
@@ -234,13 +237,13 @@ const content = {
             </div>
           ),
           icon: <Lock />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
         },
         card2: {
-          title: "Recuperação do Veículo Apreendido",
+          title: 'Recuperação do Veículo Apreendido',
           subtitle:
-            "Atuação emergencial para tentar reverter a apreensão e recuperar seu carro.",
+            'Atuação emergencial para tentar reverter a apreensão e recuperar seu carro.',
           description: (
             <div>
               A_Definir
@@ -250,13 +253,13 @@ const content = {
             </div>
           ),
           icon: <Car />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
         },
         card3: {
-          title: "Negociação e Renegociação da Dívida",
+          title: 'Negociação e Renegociação da Dívida',
           subtitle:
-            "Buscamos acordos possíveis para manter o veículo e organizar o pagamento da dívida.",
+            'Buscamos acordos possíveis para manter o veículo e organizar o pagamento da dívida.',
           description: (
             <div>
               A_Definir <br />
@@ -265,13 +268,13 @@ const content = {
             </div>
           ),
           icon: <HandCoins />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
         },
         card4: {
-          title: "Revisão de Contrato e Juros Abusivos",
+          title: 'Revisão de Contrato e Juros Abusivos',
           subtitle:
-            "Análise completa do contrato para identificar cobranças ilegais e reduzir o valor da dívida.",
+            'Análise completa do contrato para identificar cobranças ilegais e reduzir o valor da dívida.',
           description: (
             <div>
               A_Definir
@@ -281,12 +284,12 @@ const content = {
             </div>
           ),
           icon: <FileText />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
         },
         card5: {
           title: <p>A_Definir</p>,
-          subtitle: "A_Definir",
+          subtitle: 'A_Definir',
           description: (
             <div>
               A_Definir
@@ -313,12 +316,12 @@ const content = {
               <path d="M12 18V6" />
             </svg>
           ),
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
         },
         card6: {
-          title: "A_Definir",
-          subtitle: "A_Definir",
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
           description: (
             <div>
               A_Definir
@@ -328,41 +331,41 @@ const content = {
             </div>
           ),
           icon: <Scale />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
         },
       },
       moreFeatures: {
         card1: {
-          ico: "A_Definir",
-          title: "A_Definir",
-          subtitle: "A_Definir",
+          ico: 'A_Definir',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
         },
         card2: {
-          ico: "A_Definir",
-          title: "A_Definir",
-          subtitle: "A_Definir",
+          ico: 'A_Definir',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
         },
         card3: {
-          ico: "A_Definir",
-          title: "A_Definir",
-          subtitle: "A_Definir",
+          ico: 'A_Definir',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
         },
       },
-      ctaButtonText: "Recuperar minha paz ao dirigir",
+      ctaButtonText: 'Recuperar minha paz ao dirigir',
     },
     maps: {
-      minitag: "A_Definir",
-      title: "A_Definir",
-      subtitle: "A_Definir",
-      embedsrc: "A_Definir",
+      minitag: 'A_Definir',
+      title: 'A_Definir',
+      subtitle: 'A_Definir',
+      embedsrc: 'A_Definir',
     },
     about: {
       imagem: {
         img: aboutImg,
-        alt: "Imagem ilustrativa da Seção Sobre",
+        alt: 'Imagem ilustrativa da Seção Sobre',
       },
-      miniTag: "QUEM É A DRA. MARINA DEMENCIANO",
+      miniTag: 'QUEM É A DRA. MARINA DEMENCIANO',
       title: (
         <h1>
           Minha
@@ -370,9 +373,9 @@ const content = {
           defesa
         </h1>
       ),
-      SecondPartTitle: "",
+      SecondPartTitle: '',
       subtitle:
-        "Experiência consolidada na proteção de direitos e patrimônios com estratégia.",
+        'Experiência consolidada na proteção de direitos e patrimônios com estratégia.',
       paragraph: (
         <div>
           Com mais de 13 anos de experiência jurídica, a Dra. Marina Demenciano
@@ -390,7 +393,7 @@ const content = {
         </div>
       ),
 
-      buttonModalLabelAbout: "Continuar lendo",
+      buttonModalLabelAbout: 'Continuar lendo',
       modal: (
         <p className="text-mutedForeground font-secondFont">
           A_Definir
@@ -402,10 +405,10 @@ const content = {
           A_Definir
         </p>
       ),
-      paragraphModalCta: "Entre em contato",
-      titleModal: "A_Definir",
-      ctaButtonAriaLabel: "Botão para entrar em contato",
-      ctaButtonText: "Falar diretamente com a Dra. Marina",
+      paragraphModalCta: 'Entre em contato',
+      titleModal: 'A_Definir',
+      ctaButtonAriaLabel: 'Botão para entrar em contato',
+      ctaButtonText: 'Falar diretamente com a Dra. Marina',
       // aboutSocial: {
       //   img: {
       //     img: aboutSocialImg,
@@ -450,7 +453,7 @@ const content = {
     //   },
     // },
     steps: {
-      miniTag: "COMO ATUAMOS NA DEFESA DO SEU VEÍCULO",
+      miniTag: 'COMO ATUAMOS NA DEFESA DO SEU VEÍCULO',
       title: (
         <h1>
           Defesa
@@ -458,39 +461,39 @@ const content = {
           proteger seu carro na ação de busca e apreensão
         </h1>
       ),
-      subtitle: "",
+      subtitle: '',
       img: imgSteps,
-      alt: "Imagem ilustrativa da Seção Passo a Passo",
+      alt: 'Imagem ilustrativa da Seção Passo a Passo',
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: "Análise do financiamento e da ação do banco",
+          cardTitle: 'Análise do financiamento e da ação do banco',
           cardDescription:
-            "Analisamos o contrato de financiamento do veículo, a notificação de atraso e a ação de busca e apreensão para identificar juros abusivos, cobranças irregulares e falhas que podem anular ou suspender o processo.",
+            'Analisamos o contrato de financiamento do veículo, a notificação de atraso e a ação de busca e apreensão para identificar juros abusivos, cobranças irregulares e falhas que podem anular ou suspender o processo.',
         },
         card2: {
           stepNumber: 2,
-          cardTitle: "Medidas urgentes para evitar ou reverter a apreensão",
+          cardTitle: 'Medidas urgentes para evitar ou reverter a apreensão',
           cardDescription:
-            "Com base na análise, adotamos as medidas jurídicas cabíveis para tentar impedir a apreensão do veículo ou buscar a devolução do carro quando ele já foi recolhido pelo banco.",
+            'Com base na análise, adotamos as medidas jurídicas cabíveis para tentar impedir a apreensão do veículo ou buscar a devolução do carro quando ele já foi recolhido pelo banco.',
         },
         card3: {
           stepNumber: 3,
-          cardTitle: "Estratégia para reduzir a dívida ou viabilizar acordo",
+          cardTitle: 'Estratégia para reduzir a dívida ou viabilizar acordo',
           cardDescription:
-            "Buscamos alternativas legais para revisão do valor financiado, redução do saldo devedor ou negociação direta com a instituição financeira, sempre focando em manter o veículo e aliviar o impacto financeiro.",
+            'Buscamos alternativas legais para revisão do valor financiado, redução do saldo devedor ou negociação direta com a instituição financeira, sempre focando em manter o veículo e aliviar o impacto financeiro.',
         },
         card4: {
           stepNumber: 4,
-          cardTitle: "Acompanhamento próximo e comunicação clara",
+          cardTitle: 'Acompanhamento próximo e comunicação clara',
           cardDescription:
-            "Você acompanha cada etapa do processo com explicações objetivas, prazos claros e orientações práticas, sabendo exatamente o que está sendo feito para proteger seu veículo.",
+            'Você acompanha cada etapa do processo com explicações objetivas, prazos claros e orientações práticas, sabendo exatamente o que está sendo feito para proteger seu veículo.',
         },
       },
-      ctaButtonText: "Falar diretamente com a Dra. Marina",
+      ctaButtonText: 'Falar diretamente com a Dra. Marina',
     },
     ctaSecondary: {
-      miniTag: "FALE CONOSCO",
+      miniTag: 'FALE CONOSCO',
       title: <h1>Prestes a perder seu veículo? </h1>,
       subtitle: (
         <div>
@@ -500,30 +503,30 @@ const content = {
       container: (
         <div className="flex flex-col gap-3">
           <div className="flex items-start gap-2">
-            {" "}
+            {' '}
             <span className="bg-primaryDark rounded-full p-0.5">
               <Check className="text-white" width={22} />
-            </span>{" "}
+            </span>{' '}
             Análise imediata do seu caso e da possibilidade de suspender ou
             reverter a apreensão
           </div>
           <div className="flex items-start gap-2">
-            {" "}
+            {' '}
             <span className="bg-primaryDark rounded-full p-0.5">
               <Check className="text-white" width={22} />
-            </span>{" "}
+            </span>{' '}
             Avaliação do contrato para identificar juros abusivos e falhas
             legais
           </div>
           <div className="flex items-start gap-2">
-            {" "}
+            {' '}
             <span className="bg-primaryDark rounded-full p-0.5">
               <Check className="text-white" width={22} />
-            </span>{" "}
+            </span>{' '}
             Orientação clara sobre prazos, riscos e próximos passos
           </div>
           <div className="flex items-start gap-2">
-            {" "}
+            {' '}
             <span className="bg-primaryDark rounded-full p-0.5">
               <Check className="text-white" width={22} />
             </span>
@@ -540,9 +543,9 @@ const content = {
       titleDireita: (
         <h1 className="my-3 text-title5 font-mainFont">WhatsApp</h1>
       ),
-      ctaButtonText: "Preciso de ajuda urgente",
+      ctaButtonText: 'Preciso de ajuda urgente',
       ctaButtonAriaLabel:
-        "Botão para chamada de ação para contato pelo whatsapp",
+        'Botão para chamada de ação para contato pelo whatsapp',
     },
     // blog: {
     //   miniTag: 'BLOG',
@@ -554,28 +557,28 @@ const content = {
     //   blogLink: 'mauromoncao.wordpress.com', //sem "https://"
     // },
     faq: {
-      miniTag: "TIRE SUAS DÚVIDAS",
-      title: "Perguntas Frequentes",
-      subtitle: "A_Definir",
+      miniTag: 'TIRE SUAS DÚVIDAS',
+      title: 'Perguntas Frequentes',
+      subtitle: 'A_Definir',
       questions: {
         question1: {
-          question: "A_Definir",
-          answer: "A_Definir",
+          question: 'A_Definir',
+          answer: 'A_Definir',
         },
         question2: {
-          question: "A_Definir",
-          answer: "A_Definir",
+          question: 'A_Definir',
+          answer: 'A_Definir',
         },
         question3: {
-          question: "A_Definir",
-          answer: "A_Definir",
+          question: 'A_Definir',
+          answer: 'A_Definir',
         },
         question4: {
-          question: "A_Definir",
-          answer: "A_Definir",
+          question: 'A_Definir',
+          answer: 'A_Definir',
         },
       },
-      paragraph: "Clique aqui caso tenha mais dúvidas",
+      paragraph: 'Clique aqui caso tenha mais dúvidas',
     },
     // team: {
     //   miniTag: 'A_Definir',
@@ -845,13 +848,13 @@ const content = {
     // },
     footer: {
       copyrightLine: ` ${currentYear} - ${infos.name} - Todos os direitos reservados.`,
-      footerDivulgacaoText: "Gostaria de ter um site como este? Clique aqui",
-      midSectionName: "Até mais",
+      footerDivulgacaoText: 'Gostaria de ter um site como este? Clique aqui',
+      midSectionName: 'Até mais',
       footerText:
-        "Agradecemos sua visita! Esperamos que em breve você se torne nosso cliente e desfrute de todos os benefícios que oferecemos.",
-      footerSocialText: "Siga a gente nas redes sociais:",
-      footerNavegacaoText: "NAVEGAÇÃO",
-      desenvolvidoPor: "Desenvolvido com excelência por Paper Street",
+        'Agradecemos sua visita! Esperamos que em breve você se torne nosso cliente e desfrute de todos os benefícios que oferecemos.',
+      footerSocialText: 'Siga a gente nas redes sociais:',
+      footerNavegacaoText: 'NAVEGAÇÃO',
+      desenvolvidoPor: 'Desenvolvido com excelência por Paper Street',
       privacidade: (
         <div class="phone3:max-w-3xl mx-auto tablet1:px-6 text-gray-900 leading-relaxed font-secondFont">
           <h1 class="text-3xl font-bold mb-6">Política de Privacidade</h1>
@@ -877,7 +880,7 @@ const content = {
 
           <ul class="list-disc ml-6 mb-6 space-y-2">
             <li>
-              <strong>Autoridade Nacional de Proteção de Dados (ANPD):</strong>{" "}
+              <strong>Autoridade Nacional de Proteção de Dados (ANPD):</strong>{' '}
               órgão responsável pela fiscalização e aplicação da LGPD.
             </li>
 
@@ -1084,9 +1087,9 @@ const content = {
         </div>
       ),
       pontos: {
-        ponto1: "Profissionalismo",
-        ponto2: "Experiência",
-        ponto3: "Resultados",
+        ponto1: 'Profissionalismo',
+        ponto2: 'Experiência',
+        ponto3: 'Resultados',
       },
     },
     // socios: {
@@ -1158,8 +1161,8 @@ const content = {
       year: currentYear,
       footerexpediente: infos.expediente,
       obsFooter: infos.obs,
-      footerNavegacaoText: "NAVEGAÇÃO",
-      footerDivulgacaoText: "Gostaria de ter um site como este? Clique aqui",
+      footerNavegacaoText: 'NAVEGAÇÃO',
+      footerDivulgacaoText: 'Gostaria de ter um site como este? Clique aqui',
     },
     svgs: {
       wpp: (
@@ -1175,11 +1178,11 @@ const content = {
       ),
     },
   },
-};
+}
 
 export const abstractions = {
   titleModal: <strong>{content.texts.about.title}</strong>,
   subtitleModal: <strong>{content.texts.about.subtitle}</strong>,
-};
+}
 
-export default content;
+export default content
