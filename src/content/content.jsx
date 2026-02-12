@@ -36,6 +36,7 @@ export const infos = {
   email: 'contato', // Email desejado pelo cliente
   emailSecundario: 'A_Definir', // Email desejado pelo cliente
   domain: 'marinademencianoadvocacia.com.br', // Sem "www"
+  emailSecundario: 'marinajdemenciano@gmail.com',
   phone: {
     ddd: '19',
     firstPart: '99438', // Apenas os 5 primeiros números (incluindo o 9)
@@ -54,10 +55,11 @@ export const infos = {
   endereco: (
     <div>
       {/* <p>Endereço:</p> */}
-      <p>Rua Padre Bernardo da Silva,</p>
-      <p>419, Sobreloja, São Bernardo,</p>
+      <p>Av. José de Sousa Campos,</p>
+      <p>1073 - 12º andar,</p>
+      <p>sala 1207 - Cambuí,</p>
       <p>Campinas - SP,</p>
-      <p>CEP: 13030-710</p>
+      <p>CEP: 13025-320</p>
     </div>
   ),
   enderecoSecundario: (

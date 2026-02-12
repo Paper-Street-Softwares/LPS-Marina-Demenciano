@@ -86,7 +86,7 @@ function HeroTemplateNovo({
           className={`absolute bottom-0 left-0 w-[40%] h-1/2 rounded-full blur-3xl -translate-x-1/4 translate-y-1/4 z-0 ${backgroundMode}`}
         />
         <SectionWrapper>
-          <div className="container relative z-10 grid lg:grid-cols-2 gap-4 phone2:gap-6 lg:gap-20 items-center">
+          <div className=" relative z-10 grid lg:grid-cols-2 gap-4 phone2:gap-6 lg:gap-20 items-center">
             {/* Content */}
 
             <div

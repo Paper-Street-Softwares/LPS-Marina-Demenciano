@@ -69,8 +69,8 @@ export default function Index() {
               phoneSecond={false}
               expediente={true}
               adress={true}
-              email={true}
-              emailSecond={false}
+              email={false}
+              emailSecond={true}
               fraseFooter={true} // frase Google LLC
               obs={true}
             />

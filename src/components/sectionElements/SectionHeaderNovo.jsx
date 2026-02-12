@@ -60,7 +60,7 @@ function SectionHeaderNovo({
   }
 
   return (
-    <div className={`max-w-2xl mx-auto ${className} ${usage}`}>
+    <div className={` mx-auto ${className} ${usage}`}>
       <MotionDivDownToUp>
         {miniTitle && (
           <span

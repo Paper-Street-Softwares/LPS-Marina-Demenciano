@@ -55,18 +55,18 @@ function FooterNovoTemplate({
     <SectionArea className={`${backgroundMode} pb-4`} paddingbot={false}>
       <SectionWrapper>
         <footer className={`${textOpacity}`}>
-          <div className="container mx-auto">
+          <div className=" mx-auto">
             <div
               className={`grid sm:grid-cols-2 lg:grid-cols-3 ${grid} items-start gap-12 tablet2:gap-2 desktop1:gap-12 mb-8 w-full`}
             >
               {/* Logo e infos */}
               <div className="space-y-6">
                 <img
-                  src={content.texts.navbar.logo.img}
+                  src={content.texts.navbar.logo.imgDesktop}
                   alt={content.texts.navbar.logo.alt}
                   className="w-[50%]"
-                  width={187}
-                  height={119}
+                  width={243}
+                  height={109}
                 />
                 <p
                   className={`leading-relaxed font-secondFont font-light ${textOpacity}`}

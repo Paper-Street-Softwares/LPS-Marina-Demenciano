@@ -61,7 +61,7 @@ function StepsNovoTemplate({ colorMode }) {
     <SectionArea className={backgroundMode} data-theme={colorMode}>
       <SectionWrapper>
         <section>
-          <div className="container mx-auto">
+          <div className=" mx-auto">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               {/* Imagem */}
               <div
